@@ -65,7 +65,6 @@ class Crawler:
             login_fields = WebDriverWait(driver,self.delay).until(EC.presence_of_all_elements_located((By.XPATH, self.login_fields_xpath)))
             username_field = login_fields[0]
             username_field.send_keys(self.username)
-            driver.get_screenshot_as_file("screenshot.png")
             print("username keys sent successfully")
             password_field = login_fields[1]
             password_field.send_keys(self.pw)

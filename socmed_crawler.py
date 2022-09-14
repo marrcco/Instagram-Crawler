@@ -112,10 +112,3 @@ crawler = Crawler(type_of_media="instagram",
 
 df = crawler.crawl()
 crawler.update_spreadsheet(df)
-
-
-
-
-
-
-

@@ -48,10 +48,10 @@ class Crawler:
 
     # function for selenium setup
     def selenium_setup(self):
-        option = Options()  # remove after chrome 104
+        option = Options() 
         option.headless = True
         option.add_argument("--window-size=1920,1080")
-        driver = webdriver.Chrome(self.webdriver_path,options=option)  # load driver
+        driver = webdriver.Chrome(self.webdriver_path,options=option)
         return driver
 
     # function for crawling instagram followers
